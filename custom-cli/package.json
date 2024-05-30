@@ -1,0 +1,13 @@
+{
+  "name": "pokedex-n",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "runPokedex": "--watch index.js"
+  },
+  "dependencies": {
+    "inquirer": "8.2.5",
+    "yargs": "^17.7.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "inspect": "node --watch app.js"
+  },
+  "dependencies": {
+    "upper-case": "^2.0.2"
+  }
+}
