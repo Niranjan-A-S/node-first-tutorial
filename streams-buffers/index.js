@@ -12,3 +12,17 @@
  * If there is data already processed or too little data to process, Node puts the data in a buffer
  * It is a small area of memory that Node  in the runtime to process a stream of data
  */
+
+const buffer = new Buffer.from('Niranjan', 'utf-8');
+
+console.log({
+    buffer,
+    bufferJSON: buffer.toJSON(),
+    bufferString: buffer.toString(),
+    bufferBase64: buffer.toString('base64'), //base64 encoded,
+    bufferHex: buffer.toString('hex'),
+    appendExtraToBuffer: (function () {
+        buffer.write('A S');// replaced due to shortage of memory
+        return buffer.toString()
+    })()
+})
